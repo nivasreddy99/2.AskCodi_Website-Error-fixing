@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Online Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        form {
+            width: 300px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Online Booking</h1>
+    
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <button type="submit" onclick="login()">Login</button>
+    </form>
+
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+            // Add your login logic here
+            // Example: send the username and password to a server for authentication
+            console.log('Username: ' + username + ', Password: ' + password);
+        }
+    </script>
+</body>
