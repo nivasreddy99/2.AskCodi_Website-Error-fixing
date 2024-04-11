@@ -58,17 +58,22 @@
     </style>
 </head>
 <body>
-    <h1>Restaurant Online Booking</h1>
-    
-    <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" placeholder="Enter your username" required>
+    <header role="banner">
+        <h1>Restaurant Online Booking</h1>
+    </header>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" placeholder="Enter your password" required>
+    <main role="main">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
 
-        <button type="submit" onclick="login()">Login</button>
-    </form>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit" onclick="login()">Login</button>  
+        </form>
+    </main>
+</body>
 
     <script>
         function login() {
